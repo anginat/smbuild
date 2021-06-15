@@ -96,10 +96,13 @@
                     <input type="email" name="EMAIL" class="form-control" required="" placeholder="Email Address">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="FNAME" class="form-control" placeholder="First Name">
+                    <input type="text" name="FNAME" class="form-control" required placeholder="First Name">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="LNAME" class="form-control" placeholder="Last Name">
+                    <input type="text" name="LNAME" class="form-control" required placeholder="Last Name">
+                  </div>
+                    <div class="form-group">
+                    <input type="tel" name="TEL" class="form-control" required placeholder="Phone Number">
                   </div>
                   <button type="submit">
                     <span class="loader hidden"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;height:2em">
@@ -280,7 +283,7 @@
         var data = $(this).serialize();
         $.ajax({
           url:
-            "https://cartbuilder.us6.list-manage.com/subscribe/post?u=7f7a3cf01a9df65828e4be150&amp;id=b89dce663b",
+            "https://cartbuilder.us6.list-manage.com/subscribe/post?u=7f7a3cf01a9df65828e4be150&amp;amp;id=b89dce663b",
           method: "POST",
           data,
 
